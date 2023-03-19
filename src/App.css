@@ -1,38 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(183, 243, 223);
+}
+
 .App {
+  background-color: #fff;
+  width: 60%;
+  margin: 5rem auto;
+  padding: 3rem 2rem;
+}
+
+h1 {
   text-align: center;
+  padding-bottom: 2rem;
+  font-size: 3rem;
+  font-weight: 400;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  padding: 0 .5rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.accordion-card {
+  border: 2px solid lightgray;
+  margin-bottom: 1.5rem;
+  border-radius: .2rem;
+  padding: 1rem 1.5rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.question {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+button {
+  background-color: rgb(14, 14, 71);
+  color: #fff;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  font-size: 1.4rem;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.answer p {
+  padding-top: 1rem;
+  line-height: 2rem;
 }
